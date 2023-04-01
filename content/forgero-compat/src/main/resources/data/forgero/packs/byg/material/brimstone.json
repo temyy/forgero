@@ -1,0 +1,23 @@
+{
+  "type": "STONE",
+  "name": "brimstone",
+  "parent": "default_stone",
+  "container": {
+    "type": "HOST",
+    "id": "byg:brimstone"
+  },
+  "properties": {
+    "attributes": [
+      {
+        "id": "stone-rarity-composite",
+        "type": "RARITY",
+        "order": "COMPOSITE",
+        "operation": "ADDITION",
+        "value": 10
+      }
+    ]
+  },
+  "palette": {
+    "name": "brimstone"
+  }
+}

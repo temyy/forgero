@@ -1,0 +1,16 @@
+{
+  "type": "STONE",
+  "name": "scoria_stone",
+  "parent": "default_stone",
+  "container": {
+    "type": "HOST",
+    "id": "byg:scoria_stone"
+  },
+  "properties": {
+    "attributes": [
+    ]
+  },
+  "palette": {
+    "name": "scoria_stone"
+  }
+}

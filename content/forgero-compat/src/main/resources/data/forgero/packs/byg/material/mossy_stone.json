@@ -1,0 +1,16 @@
+{
+  "type": "STONE",
+  "name": "mossy_stone",
+  "parent": "default_stone",
+  "container": {
+    "type": "HOST",
+    "id": "byg:mossy_stone"
+  },
+  "properties": {
+    "attributes": [
+    ]
+  },
+  "palette": {
+    "name": "mossy_stone"
+  }
+}

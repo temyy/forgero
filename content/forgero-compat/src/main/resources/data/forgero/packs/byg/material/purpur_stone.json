@@ -1,0 +1,16 @@
+{
+  "type": "STONE",
+  "name": "purpur_stone",
+  "parent": "default_stone",
+  "container": {
+    "type": "HOST",
+    "id": "byg:purpur_stone"
+  },
+  "properties": {
+    "attributes": [
+    ]
+  },
+  "palette": {
+    "name": "purpur_stone"
+  }
+}

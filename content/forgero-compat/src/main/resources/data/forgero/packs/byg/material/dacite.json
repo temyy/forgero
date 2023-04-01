@@ -1,0 +1,16 @@
+{
+  "type": "STONE",
+  "name": "dacite",
+  "parent": "default_stone",
+  "container": {
+    "type": "HOST",
+    "id": "byg:dacite"
+  },
+  "properties": {
+    "attributes": [
+    ]
+  },
+  "palette": {
+    "name": "dacite"
+  }
+}

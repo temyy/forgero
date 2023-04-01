@@ -20,6 +20,9 @@ repositories {
 	maven { url 'https://maven.gegy.dev' }
 	maven { url 'https://maven.kosmx.dev/' }
 	maven { url 'https://jitpack.io' }
+	maven { url = "https://maven.tterrag.com/" } // Flywheel
+	maven { url = "https://mvn.devos.one/snapshots/" } // Registrate, Porting Lib, Forge Tags, Milk Lib
+	maven { url = 'https://maven.minecraftforge.net/' }
 	maven { url = uri("https://ueaj.dev/maven") }
 	mavenLocal()
 }
@@ -53,6 +56,29 @@ dependencies {
 	// modImplementation "maven.modrinth:BgNRHReB:mKksn4EY"
 	// modImplementation "maven.modrinth:gc8OEnCC:5CIFclEA"
 	// modImplementation "maven.modrinth:MpzVLzy5:InVK1xFf"
+
+	//Terra
+	modImplementation "maven.modrinth:kkmrDlKT:nZwFn2MJ"
+	implementation 'com.github.TheElectronWill.Night-Config:nightconfig-core:master'
+	implementation group: 'com.electronwill.night-config', name: 'toml', version: '3.6.6'
+
+	// BYG
+	modImplementation "maven.modrinth:uE1WpIAk:9MInWvhi"
+	modImplementation "maven.modrinth:ziOp6EO8:VLaSLzb2"
+	modImplementation "maven.modrinth:8BmcQJ2H:ATPZfRS1"
+
+	//Create
+	//modImplementation "io.github.fabricators_of_create:Porting-Lib:$port_lib_version+$minecraft_version"
+	//modImplementation "me.alphamode:ForgeTags:$forge_tags_version"
+	//modImplementation "com.electronwill.night-config:core:$night_config_version"
+	//modImplementation  "com.electronwill.night-config:toml:$night_config_version"
+	//modImplementation "curse.maven:forge-config-api-port-fabric-547434:$config_api_id"
+	//modImplementation "com.tterrag.registrate_fabric:Registrate:$registrate_version"
+	//modImplementation "com.jozufozu.flywheel:flywheel-fabric-$flywheel_minecraft_version:$flywheel_version"
+	//modImplementation "com.jamieswhiteshirt:reach-entity-attributes:$reach_entity_attributes_version"
+	//modImplementation "io.github.tropheusj:milk-lib:$milk_lib_version"
+	//implementation "com.google.code.findbugs:jsr305:$jsr305_version"
+
 
 
 	//emi

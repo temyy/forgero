@@ -1,0 +1,16 @@
+{
+  "type": "STONE",
+  "name": "ether_stone",
+  "parent": "default_stone",
+  "container": {
+    "type": "HOST",
+    "id": "byg:ether_stone"
+  },
+  "properties": {
+    "attributes": [
+    ]
+  },
+  "palette": {
+    "name": "ether_stone"
+  }
+}
