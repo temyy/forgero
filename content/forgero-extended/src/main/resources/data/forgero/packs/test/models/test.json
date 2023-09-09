@@ -1,0 +1,21 @@
+{
+  "type": "PICKAXE_HEAD",
+  "models": [
+
+    {
+      "name": "test",
+      "type": "GENERATE",
+      "template": "iron_hammer.png",
+      "palette": "TOOL_MATERIAL",
+      "order": 20
+    },
+    {
+      "target": [
+        "type:TOOL_MATERIAL",
+        "id:test-schematic"
+      ],
+      "modelType": "BASED_COMPOSITE",
+      "template": "test"
+    }
+  ]
+}
