@@ -1,21 +1,21 @@
 {
-  "type": "PICKAXE_HEAD",
+  "type": "SWORD_BLADE",
   "models": [
-
     {
-      "name": "test",
+      "name": "test_blade",
+      "template": "bigg_katana.png",
       "type": "GENERATE",
-      "template": "scythe_head.png",
       "palette": "TOOL_MATERIAL",
-      "order": 20
+      "order": 40
     },
+
     {
       "target": [
         "type:TOOL_MATERIAL",
-        "id:test-schematic"
+        "id:test_blade-schematic"
       ],
       "modelType": "BASED_COMPOSITE",
-      "template": "test"
+      "template": "test_blade"
     }
   ]
 }
