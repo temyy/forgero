@@ -23,7 +23,7 @@
       "name": "kunai_rope",
       "type": "GENERATE",
       "template": "kunai_rope.png",
-      "palette": "SECONDARY_MATERIAL",
+      "palette": "SLOT_MATERIAL",
       "order": 15
     },
     {
@@ -36,7 +36,7 @@
     },
     {
       "target": [
-        "type:SECONDARY_MATERIAL",
+        "type:SLOT_MATERIAL",
         "slot:2"
       ],
       "modelType": "BASED_COMPOSITE",

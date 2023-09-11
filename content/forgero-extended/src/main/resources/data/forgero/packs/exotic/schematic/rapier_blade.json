@@ -1,6 +1,6 @@
 {
   "type": "SWORD_BLADE_SCHEMATIC",
-  "name": "mace_head-schematic",
+  "name": "rapier_blade-schematic",
   "parent": "sword_blade_base",
   "container": {
     "type": "CREATE",
@@ -17,7 +17,7 @@
             "id": "this"
           },
           {
-            "type": "HARD_TOOL_MATERIAL",
+            "type": "TOOL_MATERIAL",
             "unique": true,
             "amount": 2
           }
@@ -29,7 +29,7 @@
         "id": "this"
       },
       {
-        "type": "HARD_TOOL_MATERIAL",
+        "type": "TOOL_MATERIAL",
         "unique": true
       }
     ],
@@ -39,8 +39,7 @@
         "category": [
           "OFFENSIVE"
         ],
-        "description": "reinforcement",
-        "type": "UPGRADE_MATERIAL",
+        "type": "MATERIAL",
         "tier": 1
       }
     ]

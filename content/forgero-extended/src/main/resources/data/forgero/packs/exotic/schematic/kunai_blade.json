@@ -39,7 +39,7 @@
         "category": [
           "OFFENSIVE"
         ],
-        "type": "MATERIAL",
+        "type": "UPGRADE_MATERIAL",
         "tier": 1
       },
       {
@@ -47,7 +47,7 @@
         "category": [
           "OFFENSIVE"
         ],
-        "type": "SECONDARY_MATERIAL",
+        "type": "SLOT_MATERIAL",
         "tier": 1
       }
 

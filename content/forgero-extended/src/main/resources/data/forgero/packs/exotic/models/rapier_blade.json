@@ -3,21 +3,10 @@
   "models": [
     {
       "name": "rapier_blade",
-      "template": "rapier_blade.png",
       "type": "GENERATE",
+      "template": "rapier_blade.png",
       "palette": "TOOL_MATERIAL",
       "order": 20
-    },
-    {
-      "name": "sword_blade_dye",
-      "variants": [
-        {
-          "target": [
-            "model:rapier_blade.png"
-          ],
-          "template": "rapier_blade.png"
-        }
-      ]
     },
     {
       "target": [

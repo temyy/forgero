@@ -1,6 +1,6 @@
 {
   "type": "HOE_HEAD_SCHEMATIC",
-  "name": "scythe_head-schematic",
+  "name": "scythe_blade-schematic",
   "parent": "hoe_head_base",
   "container": {
     "type": "CREATE",
