@@ -1,6 +1,6 @@
 {
   "type": "HOE_HEAD_SCHEMATIC",
-  "name": "sickle_blade-schematic",
+  "name": "chisel_head-schematic",
   "parent": "hoe_head_base",
   "container": {
     "type": "CREATE",

@@ -1,13 +1,13 @@
 {
-  "type": "HOE_HEAD_SCHEMATIC",
-  "name": "sickle_blade-schematic",
-  "parent": "hoe_head_base",
+  "type": "AXE_HEAD_SCHEMATIC",
+  "name": "mattock_axe_head-schematic",
+  "parent": "axe_head_base",
   "container": {
     "type": "CREATE",
     "id": "this"
   },
   "construct": {
-    "type": "HOE_HEAD",
+    "type": "AXE_HEAD",
     "target": "CREATE",
     "recipes": [
       {

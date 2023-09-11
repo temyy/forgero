@@ -12,6 +12,18 @@
           "template": "scythe_handle.png"
         }
       ]
+    },
+    {
+      "name": "grip",
+      "variants": [
+        {
+          "target": [
+            "type:HOE",
+            "model:spear_head.png"
+          ],
+          "template": "spear_handle_grip.png"
+        }
+      ]
     }
   ]
 }

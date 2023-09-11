@@ -1,13 +1,13 @@
 {
-  "type": "HOE_HEAD_SCHEMATIC",
-  "name": "sickle_blade-schematic",
-  "parent": "hoe_head_base",
+  "type": "SWORD_BLADE_SCHEMATIC",
+  "name": "mace_head-schematic",
+  "parent": "sword_blade_base",
   "container": {
     "type": "CREATE",
     "id": "this"
   },
   "construct": {
-    "type": "HOE_HEAD",
+    "type": "SWORD_BLADE",
     "target": "CREATE",
     "recipes": [
       {
@@ -34,7 +34,14 @@
       }
     ],
     "slots": [
-
+      {
+        "upgrade_type": "SMITHING",
+        "category": [
+          "OFFENSIVE"
+        ],
+        "type": "MATERIAL",
+        "tier": 1
+      }
     ]
   },
   "properties": {
