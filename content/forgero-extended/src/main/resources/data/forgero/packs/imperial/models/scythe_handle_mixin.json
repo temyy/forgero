@@ -1,0 +1,17 @@
+{
+  "type": "HANDLE",
+  "models": [
+    {
+      "name": "handle",
+      "variants": [
+        {
+          "target": [
+            "type:HOE",
+            "model:scythe_head.png"
+          ],
+          "template": "scythe_handle.png"
+        }
+      ]
+    }
+  ]
+}

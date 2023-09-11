@@ -1,0 +1,22 @@
+{
+  "type": "SWORD_BLADE",
+  "models": [
+    {
+      "name": "sickle_blade",
+      "type": "GENERATE",
+      "template": "sickle_blade.png",
+      "resolution": 32,
+      "palette": "TOOL_MATERIAL",
+      "order": 20
+    },
+    {
+      "target": [
+        "type:TOOL_MATERIAL",
+        "id:sickle_blade-schematic"
+      ],
+      "modelType": "BASED_COMPOSITE",
+      "template": "sickle_blade"
+
+    }
+  ]
+}

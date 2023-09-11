@@ -1,0 +1,29 @@
+{
+  "type": "HANDLE",
+  "models": [
+    {
+      "name": "handle",
+      "variants": [
+        {
+          "target": [
+            "type:SWORD",
+            "model:kunai_blade.png"
+          ],
+          "template": "kunai_handle.png"
+        }
+      ]
+    },
+    {
+      "name": "grip",
+      "variants": [
+        {
+          "target": [
+            "type:HANDLE",
+            "model:kunai_handle.png"
+          ],
+          "template": "kunai_rope.png"
+        }
+      ]
+    }
+  ]
+}

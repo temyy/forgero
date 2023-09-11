@@ -1,0 +1,51 @@
+{
+  "type": "AXE_HEAD_SCHEMATIC",
+  "name": "hatchet_blade-schematic",
+  "parent": "axe_head_base",
+  "container": {
+    "type": "CREATE",
+    "id": "this"
+  },
+  "construct": {
+    "type": "AXE_HEAD",
+    "target": "CREATE",
+    "recipes": [
+      {
+        "crafting_type": "SCHEMATIC_PART_CRAFTING",
+        "ingredients": [
+          {
+            "id": "this"
+          },
+          {
+            "type": "TOOL_MATERIAL",
+            "unique": true,
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "components": [
+      {
+        "id": "this"
+      },
+      {
+        "type": "TOOL_MATERIAL",
+        "unique": true
+      }
+    ],
+    "slots": [
+
+    ]
+  },
+  "properties": {
+    "attributes": [
+
+    ]
+  },
+  "custom_data": {
+    "ingredient_count": {
+      "value": 2,
+      "context": "LOCAL"
+    }
+  }
+}
