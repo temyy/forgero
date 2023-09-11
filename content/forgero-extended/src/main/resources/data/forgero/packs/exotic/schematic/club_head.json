@@ -17,7 +17,7 @@
             "id": "this"
           },
           {
-            "type": "TOOL_MATERIAL",
+            "type": "WOOD",
             "unique": true,
             "amount": 2
           }
@@ -29,7 +29,7 @@
         "id": "this"
       },
       {
-        "type": "TOOL_MATERIAL",
+        "type": "WOOD",
         "unique": true
       }
     ],
@@ -39,7 +39,8 @@
         "category": [
           "OFFENSIVE"
         ],
-        "type": "MATERIAL",
+        "description": "reinforcement",
+        "type": "UPGRADE_MATERIAL",
         "tier": 1
       }
     ]
