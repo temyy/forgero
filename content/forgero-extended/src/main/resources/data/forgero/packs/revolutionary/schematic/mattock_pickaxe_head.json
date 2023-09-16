@@ -1,13 +1,12 @@
 {
-  "type": "PICKAXE_HEAD_SCHEMATIC",
+  "type": "MATTOCK_HEAD_SCHEMATIC",
   "name": "mattock_pickaxe_head-schematic",
-  "parent": "pickaxe_head_base",
   "container": {
     "type": "CREATE",
     "id": "this"
   },
   "construct": {
-    "type": "PICKAXE_HEAD",
+    "type": "MATTOCK_HEAD",
     "target": "CREATE",
     "recipes": [
       {

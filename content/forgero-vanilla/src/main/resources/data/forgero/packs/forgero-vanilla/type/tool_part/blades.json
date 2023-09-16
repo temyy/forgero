@@ -1,0 +1,9 @@
+{
+  "parent": "PART",
+  "name": "BLADE",
+  "children": [
+    {
+      "name": "SWORD_BLADE"
+    }
+  ]
+}

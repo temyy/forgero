@@ -1,13 +1,12 @@
 {
-  "type": "AXE_HEAD_SCHEMATIC",
+  "type": "MATTOCK_HEAD_SCHEMATIC",
   "name": "mattock_axe_head-schematic",
-  "parent": "axe_head_base",
   "container": {
     "type": "CREATE",
     "id": "this"
   },
   "construct": {
-    "type": "AXE_HEAD",
+    "type": "MATTOCK_HEAD",
     "target": "CREATE",
     "recipes": [
       {
