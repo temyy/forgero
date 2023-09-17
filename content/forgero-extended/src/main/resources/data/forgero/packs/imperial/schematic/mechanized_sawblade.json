@@ -1,13 +1,13 @@
 {
-  "type": "HOE_HEAD_SCHEMATIC",
-  "name": "sickle_blade-schematic",
-  "parent": "hoe_head_base",
+  "type": "SWORD_BLADE_SCHEMATIC",
+  "name": "mechanized_sawblade-schematic",
+  "parent": "sword_blade_base",
   "container": {
     "type": "CREATE",
     "id": "this"
   },
   "construct": {
-    "type": "HOE_HEAD",
+    "type": "SWORD_BLADE",
     "target": "CREATE",
     "recipes": [
       {
@@ -17,7 +17,7 @@
             "id": "this"
           },
           {
-            "type": "TOOL_MATERIAL",
+            "type": "HARD_TOOL_MATERIAL",
             "unique": true,
             "amount": 2
           }
@@ -29,12 +29,29 @@
         "id": "this"
       },
       {
-        "type": "TOOL_MATERIAL",
+        "type": "HARD_TOOL_MATERIAL",
         "unique": true
       }
     ],
     "slots": [
-
+      {
+        "upgrade_type": "SMITHING",
+        "category": [
+          "OFFENSIVE"
+        ],
+        "description": "reinforcement",
+        "type": "UPGRADE_MATERIAL",
+        "tier": 1
+      },
+      {
+        "upgrade_type": "SMITHING",
+        "category": [
+          "UTILITY"
+        ],
+        "description": "cosmetic",
+        "type": "DYE",
+        "tier": 1
+      }
     ]
   },
   "properties": {

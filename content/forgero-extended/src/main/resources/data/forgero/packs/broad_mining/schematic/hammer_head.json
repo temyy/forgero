@@ -40,6 +40,15 @@
   "properties": {
     "attributes": [
 
+    ],
+    "features": [
+    {
+    "type": "BLOCK_BREAKING_PATTERN",
+    "pattern": [
+      "X",
+      "x"
+    ]
+   }
     ]
   },
   "custom_data": {

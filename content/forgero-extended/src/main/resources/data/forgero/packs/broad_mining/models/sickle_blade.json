@@ -9,6 +9,17 @@
       "order": 20
     },
     {
+      "name": "hoe_head_material",
+      "variants": [
+        {
+          "target": [
+            "model:sickle_blade.png"
+          ],
+          "template": "sickle_blade_reinforcement.png"
+        }
+      ]
+    },
+    {
       "target": [
         "type:TOOL_MATERIAL",
         "id:sickle_blade-schematic"
