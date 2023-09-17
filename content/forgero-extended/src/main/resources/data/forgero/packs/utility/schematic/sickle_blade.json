@@ -1,13 +1,13 @@
 {
-  "type": "SWORD_BLADE_SCHEMATIC",
+  "type": "HOE_HEAD_SCHEMATIC",
   "name": "sickle_blade-schematic",
-  "parent": "sword_blade_base",
+  "parent": "hoe_head_base",
   "container": {
     "type": "CREATE",
     "id": "this"
   },
   "construct": {
-    "type": "SWORD_BLADE",
+    "type": "HOE_HEAD",
     "target": "CREATE",
     "recipes": [
       {

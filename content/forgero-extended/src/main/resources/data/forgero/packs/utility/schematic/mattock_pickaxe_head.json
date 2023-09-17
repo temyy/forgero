@@ -1,6 +1,7 @@
 {
   "type": "MATTOCK_HEAD_SCHEMATIC",
   "name": "mattock_pickaxe_head-schematic",
+  "parent": "mattock_head_base",
   "container": {
     "type": "CREATE",
     "id": "this"

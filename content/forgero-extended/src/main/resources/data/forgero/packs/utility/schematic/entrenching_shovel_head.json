@@ -1,13 +1,13 @@
 {
-  "type": "AXE_HEAD_SCHEMATIC",
-  "name": "tree_feller_head-schematic",
-  "parent": "axe_head_base",
+  "type": "SHOVEL_HEAD_SCHEMATIC",
+  "name": "entrenching_shovel_head-schematic",
+  "parent": "shovel_head_base",
   "container": {
     "type": "CREATE",
     "id": "this"
   },
   "construct": {
-    "type": "AXE_HEAD",
+    "type": "SHOVEL_HEAD",
     "target": "CREATE",
     "recipes": [
       {
@@ -19,7 +19,7 @@
           {
             "type": "TOOL_MATERIAL",
             "unique": true,
-            "amount": 3
+            "amount": 2
           }
         ]
       }
@@ -56,50 +56,21 @@
   },
   "properties": {
     "attributes": [
-      {
-        "id": "schematic-rarity-local",
-        "type": "RARITY",
-        "order": "BASE",
-        "context": "LOCAL",
-        "operation": "ADDITION",
-        "value": 50
-      },
-      {
-        "id": "schematic-rarity-composite",
-        "type": "RARITY",
-        "context": "COMPOSITE",
-        "operation": "MULTIPLICATION",
-        "value": 1.25
-      },
-      {
-        "id": "schematic-mining_speed-composite",
-        "type": "MINING_SPEED",
-        "context": "COMPOSITE",
-        "operation": "MULTIPLICATION",
-        "value": 0.85
-      },
-      {
-        "id": "schematic-durability-composite",
-        "type": "DURABILITY",
-        "context": "COMPOSITE",
-        "operation": "MULTIPLICATION",
-        "value": 1
-      }
     ],
     "features": [
       {
-        "type": "COLUMN_MINING",
-        "value": 1,
-        "level": 20,
-        "tags": [
-          "forgero:vein_mining_logs"
+        "type": "BLOCK_BREAKING_PATTERN",
+        "pattern": [
+          "xxx",
+          "xxx",
+          "xxx"
         ]
       }
     ]
   },
   "custom_data": {
     "ingredient_count": {
-      "value": 3,
+      "value": 2,
       "context": "LOCAL"
     }
   }
