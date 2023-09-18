@@ -6,6 +6,18 @@
       "variants": [
         {
           "target": [
+            "type:SWORD",
+            "model:dagger_blade.png"
+          ],
+          "template": "dagger_handle.png"
+        }
+      ]
+    },
+    {
+      "name": "handle",
+      "variants": [
+        {
+          "target": [
             "type:HOE",
             "model:scythe_blade.png"
           ],

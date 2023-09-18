@@ -1,13 +1,13 @@
 {
-  "type": "SHOVEL_HEAD_SCHEMATIC",
-  "name": "entrenching_shovel_head-schematic",
-  "parent": "shovel_head_base",
+  "type": "SWORD_BLADE_SCHEMATIC",
+  "name": "dagger_blade-schematic",
+  "parent": "sword_blade_base",
   "container": {
     "type": "CREATE",
     "id": "this"
   },
   "construct": {
-    "type": "SHOVEL_HEAD",
+    "type": "SWORD_BLADE",
     "target": "CREATE",
     "recipes": [
       {
@@ -17,7 +17,7 @@
             "id": "this"
           },
           {
-            "type": "TOOL_MATERIAL",
+            "type": "HARD_TOOL_MATERIAL",
             "unique": true,
             "amount": 2
           }
@@ -29,7 +29,7 @@
         "id": "this"
       },
       {
-        "type": "TOOL_MATERIAL",
+        "type": "HARD_TOOL_MATERIAL",
         "unique": true
       }
     ],
@@ -56,14 +56,7 @@
   },
   "properties": {
     "attributes": [
-    ],
-    "features": [
-      {
-        "type": "BLOCK_BREAKING_PATTERN",
-        "pattern": [
-          "xxx"
-        ]
-      }
+
     ]
   },
   "custom_data": {

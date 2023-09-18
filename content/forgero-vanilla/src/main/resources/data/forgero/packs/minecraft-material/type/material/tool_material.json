@@ -4,21 +4,6 @@
   "children": [
     {
       "name": "WOOD"
-    },
-    {
-      "name": "METAL"
-    },
-    {
-      "name": "STONE"
-    },
-    {
-      "name": "MINERAL"
-    },
-    {
-      "name": "BONE"
-    },
-    {
-      "name": "OBSIDIAN"
     }
   ]
 }
