@@ -2,9 +2,9 @@
   "type": "AXE_HEAD",
   "models": [
     {
-      "name": "battle_axe_head",
+      "name": "war_hammer_head",
       "type": "GENERATE",
-      "template": "battle_axe_head.png",
+      "template": "war_hammer_head.png",
       "palette": "TOOL_MATERIAL",
       "order": 20
     },
@@ -13,9 +13,9 @@
       "variants": [
         {
           "target": [
-            "model:battle_axe_head.png"
+            "model:war_hammer_head.png"
           ],
-          "template": "battle_axe_head_reinforcement.png"
+          "template": "war_hammer_head_reinforcement.png"
         }
       ]
     },
@@ -24,19 +24,19 @@
       "variants": [
         {
           "target": [
-            "model:battle_axe_head.png"
+            "model:war_hammer_head.png"
           ],
-          "template": "battle_axe_head.png"
+          "template": "war_hammer_head.png"
         }
       ]
     },
     {
       "target": [
         "type:TOOL_MATERIAL",
-        "id:battle_axe_head-schematic"
+        "id:war_hammer_head-schematic"
       ],
       "modelType": "BASED_COMPOSITE",
-      "template": "battle_axe_head"
+      "template": "war_hammer_head"
     }
   ]
 }

@@ -1,13 +1,13 @@
 {
-  "type": "MATTOCK_HEAD_SCHEMATIC",
-  "name": "mattock_pickaxe_head-schematic",
-  "parent": "mattock_head_base",
+  "type": "SWORD_BLADE_SCHEMATIC",
+  "name": "cutlass_blade-schematic",
+  "parent": "sword_blade_base",
   "container": {
     "type": "CREATE",
     "id": "this"
   },
   "construct": {
-    "type": "MATTOCK_HEAD",
+    "type": "SWORD_BLADE",
     "target": "CREATE",
     "recipes": [
       {
@@ -34,7 +34,24 @@
       }
     ],
     "slots": [
-
+      {
+        "upgrade_type": "SMITHING",
+        "category": [
+          "OFFENSIVE"
+        ],
+        "description": "reinforcement",
+        "type": "UPGRADE_MATERIAL",
+        "tier": 1
+      },
+      {
+        "upgrade_type": "SMITHING",
+        "category": [
+          "UTILITY"
+        ],
+        "description": "cosmetic",
+        "type": "DYE",
+        "tier": 1
+      }
     ]
   },
   "properties": {

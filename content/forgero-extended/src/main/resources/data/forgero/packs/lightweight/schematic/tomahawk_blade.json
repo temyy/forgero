@@ -1,6 +1,6 @@
 {
   "type": "AXE_HEAD_SCHEMATIC",
-  "name": "hatchet_blade-schematic",
+  "name": "tomahawk_blade-schematic",
   "parent": "axe_head_base",
   "container": {
     "type": "CREATE",
@@ -34,7 +34,24 @@
       }
     ],
     "slots": [
-
+      {
+        "upgrade_type": "SMITHING",
+        "category": [
+          "OFFENSIVE"
+        ],
+        "description": "reinforcement",
+        "type": "UPGRADE_MATERIAL",
+        "tier": 1
+      },
+      {
+        "upgrade_type": "SMITHING",
+        "category": [
+          "UTILITY"
+        ],
+        "description": "cosmetic",
+        "type": "DYE",
+        "tier": 1
+      }
     ]
   },
   "properties": {

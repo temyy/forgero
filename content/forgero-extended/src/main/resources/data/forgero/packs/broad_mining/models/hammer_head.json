@@ -9,6 +9,17 @@
       "order": 20
     },
     {
+      "name": "axe_head_material",
+      "variants": [
+        {
+          "target": [
+            "model:hammer_head.png"
+          ],
+          "template": "hammer_head_reinforcement.png"
+        }
+      ]
+    },
+    {
       "target": [
         "type:TOOL_MATERIAL",
         "id:hammer_head-schematic"

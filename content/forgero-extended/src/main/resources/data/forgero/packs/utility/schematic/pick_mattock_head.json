@@ -1,13 +1,13 @@
 {
-  "type": "SWORD_BLADE_SCHEMATIC",
-  "name": "club_head-schematic",
-  "parent": "sword_blade_base",
+  "type": "MATTOCK_HEAD_SCHEMATIC",
+  "name": "pick_mattock_head-schematic",
+  "parent": "mattock_head_base",
   "container": {
     "type": "CREATE",
     "id": "this"
   },
   "construct": {
-    "type": "SWORD_BLADE",
+    "type": "MATTOCK_HEAD",
     "target": "CREATE",
     "recipes": [
       {
@@ -17,7 +17,7 @@
             "id": "this"
           },
           {
-            "type": "WOOD",
+            "type": "TOOL_MATERIAL",
             "unique": true,
             "amount": 2
           }
@@ -29,7 +29,7 @@
         "id": "this"
       },
       {
-        "type": "WOOD",
+        "type": "TOOL_MATERIAL",
         "unique": true
       }
     ],

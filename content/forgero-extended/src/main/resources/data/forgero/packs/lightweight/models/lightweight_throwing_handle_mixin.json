@@ -14,7 +14,7 @@
         {
           "target": [
             "type:AXE",
-            "model:hatchet_blade.png"
+            "model:tomahawk_head.png"
           ],
           "offset": [
             2,

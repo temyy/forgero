@@ -2,19 +2,19 @@
   "type": "AXE_HEAD",
   "models": [
     {
-      "name": "hatchet_blade",
+      "name": "tomahawk_blade",
       "type": "GENERATE",
-      "template": "hatchet_blade.png",
+      "template": "tomahawk_head.png",
       "palette": "TOOL_MATERIAL",
       "order": 20
     },
     {
       "target": [
         "type:TOOL_MATERIAL",
-        "id:hatchet_blade-schematic"
+        "id:tomahawk_blade-schematic"
       ],
       "modelType": "BASED_COMPOSITE",
-      "template": "hatchet_blade"
+      "template": "tomahawk_blade"
     }
   ]
 }
