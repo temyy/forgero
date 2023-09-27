@@ -21,6 +21,11 @@ repositories {
 	maven { url 'https://maven.kosmx.dev/' }
 	maven { url 'https://jitpack.io' }
 	maven { url = uri("https://ueaj.dev/maven") }
+	maven { url = "https://mvn.devos.one/snapshots/" } // Create, Porting Lib, Forge Tags, Milk Lib, Registrate
+	maven { url = "https://cursemaven.com" } // Forge Config API Port
+	maven { url = "https://maven.jamieswhiteshirt.com/libs-release" } // Reach Entity Attributes
+	maven { url = "https://jitpack.io/" } // Mixin Extras, Fabric ASM
+	maven { url = "https://maven.tterrag.com/" } // Flywheel
 	mavenLocal()
 }
 
@@ -55,9 +60,13 @@ dependencies {
 	// modImplementation "maven.modrinth:MpzVLzy5:InVK1xFf"
 
 
+	//create
+	modImplementation("com.simibubi.create:create-fabric-${minecraft_version}:${create_version}")
+
+
 	//emi
-	modCompileOnly "dev.emi:emi:${emi_version}:api"
-	modLocalRuntime "dev.emi:emi:${emi_version}"
+//	modCompileOnly "dev.emi:emi:${emi_version}:api"
+//	modLocalRuntime "dev.emi:emi:${emi_version}"
 	//modImplementation "maven.modrinth:emi-loot:0.5.0+1.19"
 
 	//JEI
