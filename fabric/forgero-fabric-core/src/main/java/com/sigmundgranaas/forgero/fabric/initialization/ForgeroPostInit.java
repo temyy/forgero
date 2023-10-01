@@ -3,6 +3,7 @@ package com.sigmundgranaas.forgero.fabric.initialization;
 import static com.sigmundgranaas.forgero.core.property.v2.attribute.attributes.AttributeModificationRegistry.modificationBuilder;
 import static com.sigmundgranaas.forgero.minecraft.common.block.assemblystation.AssemblyStationBlock.*;
 import static com.sigmundgranaas.forgero.minecraft.common.block.assemblystation.AssemblyStationScreenHandler.ASSEMBLY_STATION_SCREEN_HANDLER;
+import static com.sigmundgranaas.forgero.minecraft.common.block.craftingstation.CraftingStationBlock.*;
 import static com.sigmundgranaas.forgero.minecraft.common.block.upgradestation.UpgradeStationBlock.*;
 import static com.sigmundgranaas.forgero.minecraft.common.block.upgradestation.UpgradeStationScreenHandler.UPGRADE_STATION_SCREEN_HANDLER;
 
@@ -141,6 +142,10 @@ public class ForgeroPostInit implements ForgeroInitializedEntryPoint {
 		Registry.register(Registry.BLOCK, ASSEMBLY_STATION, ASSEMBLY_STATION_BLOCK);
 		Registry.register(Registry.ITEM, ASSEMBLY_STATION, ASSEMBLY_STATION_ITEM);
 		Registry.register(Registry.SCREEN_HANDLER, ASSEMBLY_STATION, ASSEMBLY_STATION_SCREEN_HANDLER);
+
+		Registry.register(Registry.BLOCK, CRAFTING_STATION, CRAFTING_STATION_BLOCK);
+		Registry.register(Registry.ITEM, CRAFTING_STATION, CRAFTING_STATION_ITEM);
+
 
 		Registry.register(Registry.BLOCK, UPGRADE_STATION, UPGRADE_STATION_BLOCK);
 		Registry.register(Registry.ITEM, UPGRADE_STATION, UPGRADE_STATION_ITEM);
