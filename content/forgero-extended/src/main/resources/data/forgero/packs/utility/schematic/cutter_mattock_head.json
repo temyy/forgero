@@ -7,7 +7,7 @@
     "id": "this"
   },
   "construct": {
-    "type": "MATTOCK_HEAD",
+    "type": "HOE_HEAD",
     "target": "CREATE",
     "recipes": [
       {
@@ -56,13 +56,16 @@
   },
   "properties": {
     "attributes": [
-
     ]
   },
   "custom_data": {
     "ingredient_count": {
       "value": 2,
       "context": "LOCAL"
+    },
+    "name_replacement": {
+      "from": "hoe",
+      "to": "mattock"
     }
   }
 }

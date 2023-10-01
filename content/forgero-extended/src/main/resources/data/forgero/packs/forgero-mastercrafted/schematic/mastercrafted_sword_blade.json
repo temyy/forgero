@@ -93,6 +93,10 @@
     "ingredient_count": {
       "value": 3,
       "context": "LOCAL"
+    },
+    "name_replacement": {
+      "from": "sword",
+      "to": "mastercrafted-sword"
     }
   }
 }

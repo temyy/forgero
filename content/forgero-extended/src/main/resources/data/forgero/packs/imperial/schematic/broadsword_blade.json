@@ -62,6 +62,10 @@
     "ingredient_count": {
       "value": 2,
       "context": "LOCAL"
+    },
+    "name_replacement": {
+      "from": "sword",
+      "to": "broadsword"
     }
   }
 }
