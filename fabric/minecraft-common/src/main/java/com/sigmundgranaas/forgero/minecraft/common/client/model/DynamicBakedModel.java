@@ -1,64 +1,69 @@
-package com.sigmundgranaas.forgero.minecraft.common.client.forgerotool.model.implementation;
+package com.sigmundgranaas.forgero.minecraft.common.client.model;
 
-import java.util.Collections;
+import static com.sigmundgranaas.forgero.minecraft.common.client.model.CompositeModelVariant.EMPTY;
+
 import java.util.List;
 
 import org.jetbrains.annotations.Nullable;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.model.BakedModel;
 import net.minecraft.client.render.model.BakedQuad;
 import net.minecraft.client.render.model.json.ModelOverrideList;
 import net.minecraft.client.render.model.json.ModelTransformation;
 import net.minecraft.client.texture.Sprite;
-import net.minecraft.screen.PlayerScreenHandler;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 
+public class DynamicBakedModel implements BakedModel {
+	private volatile BakedModel currentModel;
 
-public class EmptyBakedModel implements BakedModel {
+	public DynamicBakedModel() {
+		this.currentModel = EMPTY;
+		
+	}
 
+	public void updateModel(BakedModel newModel) {
+		this.currentModel = newModel;
+	}
 
 	@Override
 	public List<BakedQuad> getQuads(@Nullable BlockState state, @Nullable Direction face, Random random) {
-		return Collections.emptyList();
+		return currentModel.getQuads(state, face, random);
 	}
 
 	@Override
 	public boolean useAmbientOcclusion() {
-		return false;
+		return currentModel.useAmbientOcclusion();
 	}
 
 	@Override
 	public boolean hasDepth() {
-		return false;
+		return currentModel.hasDepth();
 	}
 
 	@Override
 	public boolean isSideLit() {
-		return false;
+		return currentModel.isSideLit();
 	}
 
 	@Override
 	public boolean isBuiltin() {
-		return false;
+		return currentModel.isBuiltin();
 	}
 
 	@Override
 	public Sprite getParticleSprite() {
-		return MinecraftClient.getInstance().getSpriteAtlas(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE).apply(new Identifier("block/cobblestone"));
+		return currentModel.getParticleSprite();
 	}
 
 	@Override
 	public ModelTransformation getTransformation() {
-		return ModelTransformation.NONE;
+		return currentModel.getTransformation();
 	}
 
 	@Override
 	public ModelOverrideList getOverrides() {
-		return ModelOverrideList.EMPTY;
+		return currentModel.getOverrides();
 	}
 }
-
