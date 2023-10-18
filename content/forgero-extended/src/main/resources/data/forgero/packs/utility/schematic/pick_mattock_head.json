@@ -1,7 +1,7 @@
 {
-  "type": "MATTOCK_HEAD_SCHEMATIC",
+  "type": "HOE_HEAD_SCHEMATIC",
   "name": "pick_mattock_head-schematic",
-  "parent": "mattock_head_base",
+  "parent": "hoe_head_base",
   "container": {
     "type": "CREATE",
     "id": "this"
