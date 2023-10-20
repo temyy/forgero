@@ -1,6 +1,6 @@
 {
   "type": "SWORD_BLADE_SCHEMATIC",
-  "name": "pruning_knife_blade-schematic",
+  "name": "butcher_knife-schematic",
   "parent": "sword_blade_base",
   "container": {
     "type": "CREATE",
@@ -65,7 +65,7 @@
     },
     "name_replacement": {
       "from": "sword",
-      "to": "pruning_knife"
+      "to": "butcher_knife"
     }
   }
 }
