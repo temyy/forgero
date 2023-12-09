@@ -24,7 +24,6 @@ public class DynamicPickaxeItem extends PickaxeItem implements ToolStateItem {
 		this.DEFAULT = defaultState;
 	}
 
-
 	@Override
 	public int getItemBarStep(ItemStack stack) {
 		return ToolStateItem.super.getItemBarStep(stack);
@@ -58,5 +57,6 @@ public class DynamicPickaxeItem extends PickaxeItem implements ToolStateItem {
 	public State defaultState() {
 		return DEFAULT.get();
 	}
+
 }
 
