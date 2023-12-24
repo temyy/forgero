@@ -13,6 +13,12 @@ repositories {
 	maven { url 'https://maven.gegy.dev' }
 	maven { url 'https://maven.kosmx.dev/' }
 	maven { url 'https://jitpack.io' }
+	maven {
+		url "https://dl.cloudsmith.io/public/klikli-dev/mods/maven/"
+		content {
+			includeGroup "com.klikli_dev"
+		}
+	}
 	maven { url = uri("https://ueaj.dev/maven") }
 	mavenLocal()
 }
@@ -30,6 +36,11 @@ dependencies {
 	modCompileOnly "vazkii.patchouli:Patchouli:${project.patchouli_version}"
 
 	modImplementation("maven.modrinth:arrp:${project.aarp_version}")
+
+
+	//modo
+	modCompileOnly "com.klikli_dev:modonomicon-${minecraft_version}-common:${modonomicon_version}"
+	modImplementation "com.klikli_dev:modonomicon-${minecraft_version}-fabric:${modonomicon_version}"
 
 	//dynamiclights compat
 	modCompileOnly("maven.modrinth:lambdynamiclights:${project.lambd_version}")
@@ -51,7 +62,7 @@ dependencies {
 	//modImplementation "maven.modrinth:emi-loot:0.5.0+1.19"
 
 	//JEI
-	modRuntimeOnly "maven.modrinth:jei:${project.jei_version}"
+	//modRuntimeOnly "maven.modrinth:jei:${project.jei_version}"
 
 	//toolstats testing
 	//modImplementation "curse.maven:tool-stats-377109:3944167"
