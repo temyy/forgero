@@ -21,12 +21,6 @@
       "text": "book.modonomicon.demo.features.recipe.crafting.text",
       "title1": "",
       "title2": ""
-    },
-    {
-      "type": "modonomicon:multiblock",
-      "multiblock_id": "forgero:assembly_station",
-      "show_visualize_button": true
-
     }
   ]
 }

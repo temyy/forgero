@@ -31,7 +31,7 @@
     "texture_height": 256,
     "texture_width": 256
   },
-  "model": "modonomicon:modonomicon_red",
+  "model": "forgero:handbook",
   "name": "book.modonomicon_demo_book.demo.name",
   "read_all_button_y_offset": 0,
   "right_frame_overlay": {
