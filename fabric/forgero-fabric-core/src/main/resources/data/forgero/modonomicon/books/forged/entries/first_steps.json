@@ -1,0 +1,26 @@
+{
+  "category": "forgero:getting_started",
+  "name": "twotool",
+  "description": "modonomicon.test.entries.test_category.multiblock.description",
+  "icon": "forgero:oak-pickaxe_head",
+  "x": -11,
+  "y": 2,
+  "pages": [
+    {
+      "type": "modonomicon:multiblock",
+      "anchor": "",
+      "multiblock_id": "forgero:upgrade_station",
+      "multiblock_name": "",
+      "show_visualize_button": true,
+      "text": ""
+    }
+  ],
+  "parents": [
+    {
+      "draw_arrow": true,
+      "entry": "forgero:configuration",
+      "line_enabled": true,
+      "line_reversed": false
+    }
+  ]
+}

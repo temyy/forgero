@@ -1,0 +1,18 @@
+{
+  "category": "forgero:getting_started",
+  "name": "Hello!",
+  "description": "modonomicon.test.entries.test_category.multiblock.description",
+  "icon": "forgero:oak-pickaxe_head",
+  "x": -11,
+  "y": -2,
+  "pages": [
+    {
+      "type": "modonomicon:text",
+      "anchor": "",
+      "show_title_separator": true,
+      "text": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.text",
+      "title": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.title",
+      "use_markdown_in_title": false
+    }
+  ]
+}
