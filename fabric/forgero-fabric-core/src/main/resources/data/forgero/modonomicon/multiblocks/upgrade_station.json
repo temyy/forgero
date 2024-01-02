@@ -9,21 +9,23 @@
       "type": "modonomicon:display",
       "display": "minecraft:stone"
     },
-    "b": {
+    "0": {
       "type": "modonomicon:block",
       "block": "forgero:upgrade_station"
     }
   },
   "pattern": [
     [
-      "_____",
-      "__b__",
-      "_____"
+      "___",
+      "___",
+      "_0_",
+      "___"
     ],
     [
-      "*+*+*",
-      "+*+*+",
-      "*+*+*"
+      "+*+",
+      "*+*",
+      "+*+",
+      "*+*"
     ]
   ]
 }
