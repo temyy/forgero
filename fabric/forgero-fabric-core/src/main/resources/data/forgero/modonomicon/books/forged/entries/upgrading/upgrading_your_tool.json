@@ -1,9 +1,9 @@
 {
-  "category": "forgero:getting_started",
-  "name": "Your First Tool",
-  "description": "How to Create Your First Tool!",
+  "category": "forgero:upgrading",
+  "name": "Upgrading & Modifying Your Tools",
+  "description": "Comprehensive guide to creating the best tool!",
   "icon": "forgero:oak-pickaxe",
-  "x": 0,
+  "x": -5,
   "y": 0,
   "pages": [
     {
@@ -13,14 +13,6 @@
       "text": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.text",
       "title": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.title",
       "use_markdown_in_title": false
-    }
-  ],
-  "parents": [
-    {
-      "draw_arrow": true,
-      "entry": "forgero:getting_started/intro",
-      "line_enabled": true,
-      "line_reversed": false
     }
   ]
 }

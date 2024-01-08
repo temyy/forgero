@@ -1,5 +1,6 @@
 {
   "name": "Getting Started!",
   "icon": "forgero:oak-pickaxe_head",
-  "background": "forgero:textures/gui/background.png"
+  "background": "forgero:textures/gui/background.png",
+  "sort_number": 1
 }

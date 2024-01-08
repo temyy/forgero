@@ -1,10 +1,10 @@
 {
   "category": "forgero:getting_started",
-  "name": "Upgrading Your Tool!",
-  "description": "How to Upgrade Your First Tool!",
-  "icon": "forgero:oak-pickaxe",
-  "x": 6,
-  "y": 0,
+  "name": "Using the Disassembly Station",
+  "description": "",
+  "icon": "forgero:assembly_station",
+  "x": 10,
+  "y": 2,
   "pages": [
     {
       "type": "modonomicon:text",
@@ -18,10 +18,9 @@
   "parents": [
     {
       "draw_arrow": true,
-      "entry": "forgero:getting_started/your_first_tool",
+      "entry": "forgero:getting_started/base_schematics",
       "line_enabled": true,
       "line_reversed": false
-    },
-
+    }
   ]
 }

@@ -1,10 +1,10 @@
 {
   "category": "forgero:getting_started",
-  "name": "Crafting Your First Handle",
+  "name": "Crafting Your First Tool!",
   "description": "",
-  "icon": "forgero:oak-handle",
-  "x": 2,
-  "y": 1,
+  "icon": "minecraft:crafting_table",
+  "x": 0,
+  "y": 0,
   "pages": [
     {
       "type": "modonomicon:text",
@@ -17,7 +17,7 @@
     {
       "type": "modonomicon:crafting_recipe",
       "anchor": "",
-      "recipe_id_1": "forgero:oak-handle",
+      "recipe_id_1": "forgero:oak-pickaxe",
       "text": "book.modonomicon.demo.features.recipe.crafting.text",
       "title1": "",
       "title2": ""
@@ -26,7 +26,7 @@
   "parents": [
     {
       "draw_arrow": true,
-      "entry": "forgero:getting_started/crafting_your_first_tool",
+      "entry": "forgero:getting_started/intro",
       "line_enabled": true,
       "line_reversed": false
     }
