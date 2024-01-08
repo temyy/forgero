@@ -1,0 +1,26 @@
+{
+  "category": "forgero:getting_started",
+  "name": "Your First Tool Head",
+  "description": "Basics On Tool Heads!",
+  "icon": "forgero:oak-pickaxe_head",
+  "x": 2,
+  "y": -1,
+  "pages": [
+    {
+      "type": "modonomicon:text",
+      "anchor": "",
+      "show_title_separator": true,
+      "text": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.text",
+      "title": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.title",
+      "use_markdown_in_title": false
+    }
+  ],
+  "parents": [
+    {
+      "draw_arrow": true,
+      "entry": "forgero:getting_started/creating_your_first_tool",
+      "line_enabled": true,
+      "line_reversed": false
+    }
+  ]
+}

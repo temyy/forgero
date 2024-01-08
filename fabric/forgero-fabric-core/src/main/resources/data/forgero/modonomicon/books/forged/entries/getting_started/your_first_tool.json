@@ -1,9 +1,9 @@
 {
   "category": "forgero:getting_started",
-  "name": "tool",
-  "description": "modonomicon.test.entries.test_category.multiblock.description",
-  "icon": "forgero:obsidian-pickaxe_head",
-  "x": -11,
+  "name": "Crafting Your Tool!",
+  "description": "How to Create Your First Tool!",
+  "icon": "forgero:oak-pickaxe",
+  "x": 4,
   "y": 0,
   "pages": [
     {
@@ -18,7 +18,13 @@
   "parents": [
     {
       "draw_arrow": true,
-      "entry": "forgero:mod_info",
+      "entry": "forgero:getting_started/handle",
+      "line_enabled": true,
+      "line_reversed": false
+    },
+    {
+      "draw_arrow": true,
+      "entry": "forgero:getting_started/head",
       "line_enabled": true,
       "line_reversed": false
     }

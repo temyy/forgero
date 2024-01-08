@@ -1,8 +1,10 @@
 {
   "name": "The Official Forgero Handbook",
   "tooltip": "Your guide into the world of Forgero!",
+  "auto_add_read_conditions": true,
   "generate_book_item": true,
   "model": "forgero:handbook",
+  "creative_tab": "modonomicon:modonomicon",
   "frame_texture": "forgero:textures/gui/book_frame.png",
   "book_content_texture": "forgero:textures/gui/book_content.png",
   "bottom_frame_overlay": {
