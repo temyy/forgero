@@ -1,0 +1,46 @@
+{
+  "name": "The Official Forgero Handbook",
+  "tooltip": "Your guide into the world of Forgero!",
+  "auto_add_read_conditions": true,
+  "generate_book_item": true,
+  "model": "forgero:handbook",
+  "creative_tab": "modonomicon:modonomicon",
+  "frame_texture": "forgero:textures/gui/book_frame.png",
+  "book_content_texture": "forgero:textures/gui/book_content.png",
+  "bottom_frame_overlay": {
+    "frame_height": 8,
+    "frame_width": 72,
+    "frame_x_offset": 0,
+    "frame_y_offset": -4,
+    "texture": "forgero:textures/gui/book_frame_bottom_overlay.png",
+    "texture_height": 256,
+    "texture_width": 256
+  },
+  "left_frame_overlay": {
+    "frame_height": 70,
+    "frame_width": 7,
+    "frame_x_offset": 3,
+    "frame_y_offset": 0,
+    "texture": "forgero:textures/gui/book_frame_left_overlay.png",
+    "texture_height": 256,
+    "texture_width": 256
+  },
+  "right_frame_overlay": {
+    "frame_height": 70,
+    "frame_width": 8,
+    "frame_x_offset": -4,
+    "frame_y_offset": 0,
+    "texture": "forgero:textures/gui/book_frame_right_overlay.png",
+    "texture_height": 256,
+    "texture_width": 256
+  },
+  "top_frame_overlay": {
+    "frame_height": 7,
+    "frame_width": 72,
+    "frame_x_offset": 0,
+    "frame_y_offset": 4,
+    "texture": "forgero:textures/gui/book_frame_top_overlay.png",
+    "texture_height": 256,
+    "texture_width": 256
+  }
+}

@@ -13,6 +13,12 @@ repositories {
 	maven { url 'https://maven.kosmx.dev/' }
 	maven { url 'https://jitpack.io' }
 	maven {
+		url "https://dl.cloudsmith.io/public/klikli-dev/mods/maven/"
+		content {
+			includeGroup "com.klikli_dev"
+		}
+	}
+	maven {
 		name = "Xander Maven"
 		url = "https://maven.isxander.dev/releases"
 	}
@@ -46,6 +52,11 @@ dependencies {
 	modCompileOnly("maven.modrinth:better-combat:${project.better_combat_version}")
 	//modImplementation "maven.modrinth:cloth-config:9.0.94+fabric"
 	//modImplementation("dev.kosmx.player-anim:player-animation-lib-fabric:${project.player_anim_version}")
+
+	//modo
+	modCompileOnly "com.klikli_dev:modonomicon-${minecraft_version}-common:${modonomicon_version}"
+	modImplementation "com.klikli_dev:modonomicon-${minecraft_version}-fabric:${modonomicon_version}"
+
 
 	//betterend&betternether
 	// modImplementation "maven.modrinth:BgNRHReB:mKksn4EY"
