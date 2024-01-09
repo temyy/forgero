@@ -3,7 +3,7 @@
   "name": "Back To Crafting",
   "description": "",
   "background_u_index": 1,
-  "background_v_index": 1,
+  "background_v_index": 2,
   "icon": "minecraft:crafting_table",
   "category_to_open": "forgero:getting_started",
   "x": -5,

@@ -7,18 +7,18 @@
   "y": 1,
   "pages": [
     {
-      "type": "modonomicon:text",
+      "type": "modonomicon:spotlight",
       "anchor": "",
-      "show_title_separator": true,
-      "text": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.text",
-      "title": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.title",
-      "use_markdown_in_title": false
+      "item": {
+        "item": "forgero:oak-handle"
+      },
+      "text": "book.forgero.guidebook.getting_started.handle.text",
+      "title": "book.forgero.guidebook.getting_started.handle.title"
     },
     {
       "type": "modonomicon:crafting_recipe",
       "anchor": "",
       "recipe_id_1": "forgero:oak-handle-basic_recipe",
-      "text": "book.modonomicon.demo.features.recipe.crafting.text",
       "title1": "",
       "title2": ""
     }

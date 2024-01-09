@@ -1,7 +1,7 @@
 {
   "category": "forgero:getting_started",
   "name": "Schematics",
-  "description": "Basics on Schematics",
+  "description": "Stone Tools And Beyond",
   "icon": "forgero:handle-schematic",
   "x": 8,
   "y": 0,
@@ -10,15 +10,23 @@
       "type": "modonomicon:text",
       "anchor": "",
       "show_title_separator": true,
-      "text": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.text",
-      "title": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.title",
+      "text": "book.forgero.guidebook.getting_started.schematics.text",
+      "title": "book.forgero.guidebook.getting_started.schematics.title",
+      "use_markdown_in_title": false
+    },
+    {
+      "type": "modonomicon:text",
+      "anchor": "",
+      "show_title_separator": true,
+      "text": "book.forgero.guidebook.getting_started.schematics.text1",
+      "title": "book.forgero.guidebook.getting_started.schematics.title1",
       "use_markdown_in_title": false
     }
   ],
   "parents": [
     {
       "draw_arrow": true,
-      "entry": "forgero:getting_started/stone_age",
+      "entry": "forgero:getting_started/your_first_tool",
       "line_enabled": true,
       "line_reversed": false
     }

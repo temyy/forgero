@@ -11,8 +11,16 @@
       "type": "modonomicon:text",
       "anchor": "",
       "show_title_separator": true,
-      "text": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.text",
-      "title": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.title",
+      "text": "book.forgero.guidebook.getting_started.about_this_mod.text",
+      "title": "book.forgero.guidebook.getting_started.about_this_mod.title",
+      "use_markdown_in_title": false
+    },
+    {
+      "type": "modonomicon:text",
+      "anchor": "",
+      "show_title_separator": true,
+      "text": "book.forgero.guidebook.getting_started.about_this_mod.text1",
+      "title": "book.forgero.guidebook.getting_started.about_this_mod.title1",
       "use_markdown_in_title": false
     }
   ]

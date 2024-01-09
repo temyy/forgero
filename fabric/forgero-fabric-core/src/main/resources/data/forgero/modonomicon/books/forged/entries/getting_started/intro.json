@@ -2,7 +2,7 @@
   "category": "forgero:getting_started",
   "name": "Welcome To The World Of Forgero!",
   "description": "",
-  "icon": "minecraft:feather",
+  "icon": "forgero:iron-pickaxe_head-handle",
   "x": -3,
   "y": 0,
   "pages": [
@@ -10,8 +10,8 @@
       "type": "modonomicon:text",
       "anchor": "",
       "show_title_separator": true,
-      "text": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.text",
-      "title": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.title",
+      "text": "book.forgero.guidebook.getting_started.intro.text",
+      "title": "book.forgero.guidebook.getting_started.intro.title",
       "use_markdown_in_title": false
     }
   ],
