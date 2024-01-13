@@ -1,10 +1,10 @@
 {
   "category": "forgero:getting_started",
-  "name": "Refined Schematics",
-  "description": "Everything on Refined Schematics!",
+  "name": "Extended Schematics",
+  "description": "Everything on Extended Schematics!",
   "icon": "forgero:refined_pickaxe_head-schematic",
-  "x": 5,
-  "y": -3,
+  "x": 7,
+  "y": -4,
   "pages": [
     {
       "type": "modonomicon:text",

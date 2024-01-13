@@ -3,22 +3,37 @@
   "name": "Using the Disassembly Station",
   "description": "",
   "icon": "forgero:assembly_station",
-  "x": 10,
+  "x": 7,
   "y": 2,
   "pages": [
+    {
+      "type": "modonomicon:spotlight",
+      "anchor": "",
+      "item": {
+        "item": "forgero:assembly_station"
+      },
+      "text": "book.forgero.guidebook.getting_started.disassembly_station.text",
+      "title": "book.forgero.guidebook.getting_started.disassembly_station.title"
+    },
+    {
+      "type": "modonomicon:multiblock",
+      "multiblock_name": "",
+      "multiblock_id": "forgero:assembly_station",
+      "text": ""
+    },
     {
       "type": "modonomicon:text",
       "anchor": "",
       "show_title_separator": true,
-      "text": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.text",
-      "title": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.title",
+      "text": "book.forgero.guidebook.getting_started.disassembly_station.text2",
+      "title": "book.forgero.guidebook.getting_started.disassembly_station.title2",
       "use_markdown_in_title": false
     },
     {
       "type": "modonomicon:crafting_recipe",
       "anchor": "",
-      "recipe_id_1": "forgero:assembly_station",
-      "text": "book.modonomicon.demo.features.recipe.crafting.text",
+      "recipe_id_1": "forgero:assembly_table",
+      "text": "book.forgero.guidebook.getting_started.disassembly_station.text1",
       "title1": "",
       "title2": ""
     }
@@ -26,7 +41,7 @@
   "parents": [
     {
       "draw_arrow": true,
-      "entry": "forgero:getting_started/base_schematics",
+      "entry": "forgero:getting_started/schematics",
       "line_enabled": true,
       "line_reversed": false
     }

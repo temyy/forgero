@@ -3,7 +3,7 @@
   "name": "Using Your Schematic",
   "description": "Everything on Base Schematics",
   "icon": "forgero:cobblestone-pickaxe",
-  "x": 13,
+  "x": 9,
   "y": 0,
   "pages": [
     {
@@ -27,7 +27,7 @@
   "parents": [
     {
       "draw_arrow": true,
-      "entry": "forgero:getting_started/base_schematics",
+      "entry": "forgero:getting_started/schematics",
       "line_enabled": true,
       "line_reversed": false
     },

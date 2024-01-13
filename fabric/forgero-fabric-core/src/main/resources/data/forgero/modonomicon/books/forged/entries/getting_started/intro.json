@@ -2,7 +2,7 @@
   "category": "forgero:getting_started",
   "name": "Welcome To The World Of Forgero!",
   "description": "",
-  "icon": "forgero:iron-pickaxe_head-handle",
+  "icon": "minecraft:iron_ingot",
   "x": -3,
   "y": 0,
   "pages": [
@@ -11,6 +11,14 @@
       "anchor": "",
       "show_title_separator": true,
       "text": "book.forgero.guidebook.getting_started.intro.text",
+      "title": "book.forgero.guidebook.getting_started.intro.title",
+      "use_markdown_in_title": false
+    },
+    {
+      "type": "modonomicon:text",
+      "anchor": "",
+      "show_title_separator": true,
+      "text": "book.forgero.guidebook.getting_started.intro.text1",
       "title": "book.forgero.guidebook.getting_started.intro.title",
       "use_markdown_in_title": false
     }

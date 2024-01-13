@@ -1,26 +1,28 @@
 {
   "category": "forgero:getting_started",
   "name": "Schematics",
-  "description": "Stone Tools And Beyond",
+  "description": "Stone Tools And More",
   "icon": "forgero:handle-schematic",
-  "x": 8,
+  "x": 7,
   "y": 0,
   "pages": [
     {
-      "type": "modonomicon:text",
+      "type": "modonomicon:spotlight",
       "anchor": "",
-      "show_title_separator": true,
+      "item": {
+        "item": "forgero:oak-pickaxe_head"
+      },
       "text": "book.forgero.guidebook.getting_started.schematics.text",
-      "title": "book.forgero.guidebook.getting_started.schematics.title",
-      "use_markdown_in_title": false
+      "title": "book.forgero.guidebook.getting_started.schematics.title"
     },
     {
-      "type": "modonomicon:text",
+      "type": "modonomicon:crafting_recipe",
       "anchor": "",
-      "show_title_separator": true,
-      "text": "book.forgero.guidebook.getting_started.schematics.text1",
-      "title": "book.forgero.guidebook.getting_started.schematics.title1",
-      "use_markdown_in_title": false
+      "recipe_id_1": "forgero:handle-schematic_recipe",
+      "recipe_id_2": "forgero:pickaxe_head-schematic_recipe",
+      "text": "book.modonomicon.demo.features.recipe.crafting.text",
+      "title1": "",
+      "title2": ""
     }
   ],
   "parents": [
