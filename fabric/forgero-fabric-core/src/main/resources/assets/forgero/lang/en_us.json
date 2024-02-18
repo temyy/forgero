@@ -193,7 +193,7 @@
   "book.forgero.guidebook.getting_started.your_first_tool.text": "Now we have the parts we needed to craft your first Forgero pickaxe! Hurry, Hurry now. Nobody likes wooden tools right? ",
   "book.forgero.guidebook.getting_started.your_first_tool.title": "Your First Tool",
   "book.forgero.guidebook.getting_started.your_first_tool.text1": "Here is a small reminder for the crafting recipe. Now you will never forget it! (right?)",
-  "book.forgero.guidebook.getting_started.schematics.text": "After wooden tools you will want to upgrade to stone tools. These tools can't be crafted like the wooden ones, but require [#](1e0099)Schematics[#](). The [#](1e0099)Base Schematics[#]() can be crafted with the previous made wooden parts using the [Disassembly Station](book://disassembly_station).",
+  "book.forgero.guidebook.getting_started.schematics.text": "After wooden tools you will want to upgrade to stone tools. These tools can't be crafted like the wooden ones, but require [#](1e0099)Schematics[#](). The [#](1e0099)Base Schematics[#]() can be crafted with the previous made wooden parts using the [#](#eb9b34)[Disassembly Station](entry://getting_started/disassembly_station)[#]().",
   "book.forgero.guidebook.getting_started.schematics.title": "Schematics",
   "book.forgero.guidebook.getting_started.schematics.text1": "Schematics exist in a lot of different variants. Higher tier schematics can be found by looting dungeons and villages. Some only boost stats of their vanilla counterpart and some give unique functionality like vein mining. Next to [#](1e0099)Base Schematics[#]() you have [#](7f1734)Refined/Extended Schematics[#]() and [#](097E7B)Mastercrafted Schematics[#]()",
   "book.forgero.guidebook.getting_started.schematics.title1": "Different Schematics",
@@ -201,9 +201,9 @@
   "book.forgero.guidebook.getting_started.base_schematics.title": "Base Schematics",
   "book.forgero.guidebook.getting_started.using_your_schematics.text": "If you followed the process till now you should have crafted some [#](1e0099)Base Schematics[#](). Now you only need some stone, or other material to create better tools.",
   "book.forgero.guidebook.getting_started.using_your_schematics.title": "Using Your Schematics",
-  "book.forgero.guidebook.getting_started.disassembly_station.text": "The Disassembly Station is the way to (as the name suggests) disassemble your tools. This is handy for getting back materials/parts when you made a mistake or want to change the tool around. Try and see it for yourself!",
+  "book.forgero.guidebook.getting_started.disassembly_station.text": "The Disassembly Station makes it possible to disassemble your tools. This is pretty handy for getting back used materials/parts when upgrading or changing around your tools. So no need discard old tools!",
   "book.forgero.guidebook.getting_started.disassembly_station.title": "The Disassembly Station",
-  "book.forgero.guidebook.getting_started.disassembly_station.text1": "Crafting the Disassembly Station only requires a crafting bench and some stone.",
+  "book.forgero.guidebook.getting_started.disassembly_station.text1": "The recipe for the disassembly station only requires some stone and a crafting bench. ",
   "book.forgero.guidebook.getting_started.disassembly_station.title2": "How to use it",
-  "book.forgero.guidebook.getting_started.disassembly_station.text2": "How it works is very basic, you put in a [#](1e0099)Tool Part[#]() you get back some (not all) of the materials. If you put in a full [#](1e0099)Tool[#]() you get back the parts that you used in the crafting process."
+  "book.forgero.guidebook.getting_started.disassembly_station.text2": "How it works is pretty straight forward. If you put in a full [#](1e0099)Tool[#]() you get back the parts its made out of. When inserting only a [#](1e0099)Tool part[#]() you get back some of the materials used crafting it."
 }

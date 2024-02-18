@@ -27,7 +27,7 @@
       "show_title_separator": true,
       "text": "book.forgero.guidebook.getting_started.disassembly_station.text2",
       "title": "book.forgero.guidebook.getting_started.disassembly_station.title2",
-      "use_markdown_in_title": false
+      "use_markdown_title": false
     },
     {
       "type": "modonomicon:crafting_recipe",

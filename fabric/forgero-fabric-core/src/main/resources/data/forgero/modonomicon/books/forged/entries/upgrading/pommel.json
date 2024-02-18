@@ -12,7 +12,7 @@
       "show_title_separator": true,
       "text": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.text",
       "title": "book.occultism.dictionary_of_spirits.getting_started.intro.intro.title",
-      "use_markdown_in_title": false
+      "use_markdown_title": false
     }
   ],
   "parents": [
