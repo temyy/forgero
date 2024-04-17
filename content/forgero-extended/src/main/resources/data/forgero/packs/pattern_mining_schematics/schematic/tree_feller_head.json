@@ -9,21 +9,6 @@
   "construct": {
     "type": "AXE_HEAD",
     "target": "CREATE",
-    "recipes": [
-      {
-        "crafting_type": "SCHEMATIC_PART_CRAFTING",
-        "ingredients": [
-          {
-            "id": "this"
-          },
-          {
-            "type": "TOOL_MATERIAL",
-            "unique": true,
-            "amount": 3
-          }
-        ]
-      }
-    ],
     "components": [
       {
         "id": "this"
@@ -95,13 +80,13 @@
           "depth": 1,
           "height": 20
         },
-        "hardness": {
-          "type": "forgero:hardness_composite"
-        },
+        "speed": "forgero:all",
         "predicate": {
           "type": "minecraft:block",
           "tag": "forgero:vein_mining_logs"
-        }
+        },
+        "title": "feature.forgero.pattern_mining.title",
+        "description": "feature.forgero.pattern_mining.tree_felling-description"
       }
     ]
   },

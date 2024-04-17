@@ -9,21 +9,6 @@
   "construct": {
     "type": "HOE_HEAD",
     "target": "CREATE",
-    "recipes": [
-      {
-        "crafting_type": "SCHEMATIC_PART_CRAFTING",
-        "ingredients": [
-          {
-            "id": "this"
-          },
-          {
-            "type": "TOOL_MATERIAL",
-            "unique": true,
-            "amount": 2
-          }
-        ]
-      }
-    ],
     "components": [
       {
         "id": "this"
@@ -89,9 +74,9 @@
     "features": [
       {
         "type": "minecraft:block_breaking",
-        "selection": {
+        "selector": {
           "type": "forgero:radius",
-          "depth": 3,
+          "radius": 3,
           "filter": {
             "type": "minecraft:block",
             "tag": "forgero:plants"

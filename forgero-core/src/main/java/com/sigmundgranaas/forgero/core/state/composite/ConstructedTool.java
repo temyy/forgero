@@ -5,6 +5,7 @@ import static com.sigmundgranaas.forgero.core.condition.Conditions.UNBREAKABLE;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Stream;
 
@@ -29,6 +30,8 @@ public class ConstructedTool extends ConstructedComposite implements SoulBindabl
 	private final State handle;
 
 	private final List<PropertyContainer> conditions;
+
+	private Integer hashCode;
 
 	public ConstructedTool(State head, State handle, SlotContainer slots, IdentifiableContainer id) {
 		super(slots, id, List.of(head, handle));
@@ -170,6 +173,22 @@ public class ConstructedTool extends ConstructedComposite implements SoulBindabl
 		return toolBuilder().conditions(Conditional.removeConditions(conditions, identifier)).build();
 	}
 
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof ConstructedTool that)) return false;
+		if (!super.equals(o)) return false;
+		return Objects.equals(conditions, that.conditions);
+	}
+
+	@Override
+	public int hashCode() {
+		if (hashCode == null) {
+			this.hashCode = Objects.hash(super.hashCode(), conditions);
+		}
+		return hashCode;
+	}
+
 	@Getter
 	public static class ToolBuilder extends BaseCompositeBuilder<ToolBuilder> {
 		protected State head;
@@ -189,8 +208,8 @@ public class ConstructedTool extends ConstructedComposite implements SoulBindabl
 		}
 
 		public static Optional<ToolBuilder> builder(List<State> parts) {
-			var head = parts.stream().filter(part -> part.test(Type.TOOL_PART_HEAD) || part.test(Type.SWORD_BLADE)).findFirst();
-			var handle = parts.stream().filter(part -> part.test(Type.HANDLE)).findFirst();
+			var head = parts.stream().filter(part -> part.test(Type.TOOL_PART_HEAD) || part.test(Type.SWORD_BLADE) || part.test(Type.BOW_LIMB)).findFirst();
+			var handle = parts.stream().filter(part -> head.orElse(null) != part).findFirst();
 			if (head.isPresent() && handle.isPresent()) {
 				return Optional.of(builder(head.get(), handle.get()));
 			}

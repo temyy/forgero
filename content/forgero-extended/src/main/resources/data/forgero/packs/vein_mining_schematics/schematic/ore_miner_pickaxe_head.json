@@ -9,21 +9,6 @@
   "construct": {
     "type": "PICKAXE_HEAD",
     "target": "CREATE",
-    "recipes": [
-      {
-        "crafting_type": "SCHEMATIC_PART_CRAFTING",
-        "ingredients": [
-          {
-            "id": "this"
-          },
-          {
-            "type": "TOOL_MATERIAL",
-            "unique": true,
-            "amount": 3
-          }
-        ]
-      }
-    ],
     "components": [
       {
         "id": "this"
@@ -98,7 +83,7 @@
               "tag": "forgero:vein_mining_ores"
             }
           ],
-          "depth": 1
+          "radius": 1
         },
         "speed": "forgero:all",
         "predicate": {

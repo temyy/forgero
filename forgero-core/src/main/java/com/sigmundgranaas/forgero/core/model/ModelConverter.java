@@ -1,6 +1,7 @@
 package com.sigmundgranaas.forgero.core.model;
 
 import static com.sigmundgranaas.forgero.core.util.Identifiers.EMPTY_IDENTIFIER;
+import static com.sigmundgranaas.forgero.core.util.Identifiers.EMPTY_IMAGE_IDENTIFIER;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,6 +19,7 @@ import com.sigmundgranaas.forgero.core.resource.data.v2.data.DataResource;
 import com.sigmundgranaas.forgero.core.resource.data.v2.data.ModelData;
 import com.sigmundgranaas.forgero.core.resource.data.v2.data.ModelEntryData;
 import com.sigmundgranaas.forgero.core.resource.data.v2.data.PaletteData;
+import com.sigmundgranaas.forgero.core.state.Identifiable;
 import com.sigmundgranaas.forgero.core.texture.utils.Offset;
 import com.sigmundgranaas.forgero.core.type.TypeTree;
 
@@ -36,7 +38,7 @@ public class ModelConverter {
 
 	private final HashMap<String, ModelData> generationModels;
 
-	private final Map<String, PaletteTemplateModel> textures;
+	private final Map<String, ModelTemplate> textures;
 
 	/**
 	 * Constructor for the ModelConverter class.
@@ -48,7 +50,7 @@ public class ModelConverter {
 	 * @param delayedModels    Models which processing has been delayed.
 	 * @param generationModels Models to be generated.
 	 */
-	public ModelConverter(TypeTree tree, Map<String, PaletteData> palettes, HashMap<String, ModelMatcher> models, Map<String, PaletteTemplateModel> textures, HashMap<String, ArrayList<ModelData>> delayedModels, HashMap<String, ModelData> generationModels) {
+	public ModelConverter(TypeTree tree, Map<String, PaletteData> palettes, HashMap<String, ModelMatcher> models, Map<String, ModelTemplate> textures, HashMap<String, ArrayList<ModelData>> delayedModels, HashMap<String, ModelData> generationModels) {
 		this.tree = tree;
 		this.palettes = palettes;
 		this.delayedModels = delayedModels;
@@ -269,6 +271,8 @@ public class ModelConverter {
 		return Stream.concat(
 						data.getVariants().stream()
 								.map(variant -> data.toBuilder()
+										.children(ImmutableList.<ModelData>builder().addAll(data.getChildren()).addAll(variant.getChildren()).build())
+										.texture(variant.getTexture().equals(EMPTY_IDENTIFIER) ? data.getTexture() : variant.getTexture())
 										.template(variant.getTemplate().equals(EMPTY_IDENTIFIER) ? data.getTemplate() : variant.getTemplate())
 										.palette(variant.getPalette().equals(EMPTY_IDENTIFIER) ? data.getPalette() : variant.getPalette())
 										.predicate(variant.getTarget())
@@ -288,10 +292,31 @@ public class ModelConverter {
 	 * @return A model match pairing.
 	 */
 	private ModelMatchPairing generate(ModelData data, List<JsonElement> additionalPredicates) {
-		var model = new PaletteTemplateModel(data.getPalette(), data.getTemplate(), data.order(), Offset.of(data.getOffset()), data.getResolution(), data.displayOverrides().orElse(null));
-		textures.put(model.identifier(), model);
 		List<JsonElement> predicates = new ArrayList<>(data.getPredicates());
 		predicates.addAll(additionalPredicates);
+		ModelMatcher model = createTemplate(data);
 		return new ModelMatchPairing(PredicateMatcher.of(predicates, new PredicateFactory()), model);
+	}
+
+	private ModelMatcher createTemplate(ModelData data) {
+		List<ModelTemplate> children = data.getChildren().stream()
+				.map(this::createTemplate)
+				.map(ModelTemplate.class::cast)
+				.toList();
+
+		ModelMatcher template;
+
+		if (data.getTemplate().contains(EMPTY_IMAGE_IDENTIFIER)) {
+			return ModelMatcher.EMPTY_TRUE;
+		} else if (data.getTexture().equals(EMPTY_IDENTIFIER)) {
+			template = new PaletteTemplateModel(data.getPalette(), data.getTemplate(), data.order(), Offset.of(data.getOffset()), data.getResolution(), data.displayOverrides().orElse(null), children);
+		} else {
+			template = new TextureModel(data.getTexture(), data.order(), Offset.of(data.getOffset()), data.getResolution(), data.displayOverrides().orElse(null), children);
+		}
+
+		Identifiable identifiable = (Identifiable) template;
+		textures.put(identifiable.identifier(), (ModelTemplate) template);
+
+		return template;
 	}
 }
